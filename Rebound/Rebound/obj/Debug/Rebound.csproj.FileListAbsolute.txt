@@ -1,0 +1,9 @@
+C:\Users\Student\source\repos\Rebound\Rebound\obj\Debug\Rebound.csprojAssemblyReference.cache
+C:\Users\Student\source\repos\Rebound\Rebound\obj\Debug\Rebound.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\Rebound\Rebound\bin\Debug\Rebound.exe.config
+C:\Users\Student\source\repos\Rebound\Rebound\bin\Debug\Rebound.exe
+C:\Users\Student\source\repos\Rebound\Rebound\bin\Debug\Rebound.pdb
+C:\Users\Student\source\repos\Rebound\Rebound\obj\Debug\Rebound.exe
+C:\Users\Student\source\repos\Rebound\Rebound\obj\Debug\Rebound.pdb
+C:\Users\Student\source\repos\Rebound\Rebound\bin\Debug\System.ValueTuple.dll
+C:\Users\Student\source\repos\Rebound\Rebound\obj\Debug\Rebound.csproj.CopyComplete

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8249FA32-F00E-4277-A6A3-018C832FC497}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Rebound</RootNamespace>
+    <AssemblyName>Rebound</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Characters\Monsters\Advespa\AggressiveGuard.cs" />
+    <Compile Include="enum types\MonsterTypes.cs" />
+    <Compile Include="enum types\Weapons\WeaponUserType.cs" />
+    <Compile Include="Models\AllCharactersModel.cs" />
+    <Compile Include="Characters\AllCharacters.cs" />
+    <Compile Include="Characters\Player.cs" />
+    <Compile Include="Characters\AllMonsters.cs" />
+    <Compile Include="enum types\Weapons\WeaponTypes.cs" />
+    <Compile Include="MainApplication.cs" />
+    <Compile Include="OpeningNMenus\BattleMenu.cs" />
+    <Compile Include="OpeningNMenus\Combat.cs" />
+    <Compile Include="OpeningNMenus\MainMenue.cs" />
+    <Compile Include="OpeningNMenus\MonsterPicker.cs" />
+    <Compile Include="OpeningNMenus\NewPlayerPrompts.cs" />
+    <Compile Include="OpeningNMenus\OddShopMenus\InsideShopMenu.cs" />
+    <Compile Include="OpeningNMenus\OddShopMenus\KnockConversationMenu.cs" />
+    <Compile Include="OpeningNMenus\OddShopMenus\OddShop.cs" />
+    <Compile Include="OpeningNMenus\RoomGenerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\WeaponModel.cs" />
+    <Compile Include="Weapons\Axe\DaneAxe.cs" />
+    <Compile Include="Weapons\Club\BoneClub.cs" />
+    <Compile Include="Weapons\Dagger\DullDagger.cs" />
+    <Compile Include="Weapons\Unarmed\BareFists.cs" />
+    <Compile Include="Weapons\Great Sword\GreatSword.cs" />
+    <Compile Include="Weapons\Monster Weapons\DullClaws.cs" />
+    <Compile Include="Weapons\Monster Weapons\SharpClaws.cs" />
+    <Compile Include="Weapons\Monster Weapons\StingerArrows.cs" />
+    <Compile Include="Weapons\Pocket Knife\PocketKnife.cs" />
+    <Compile Include="Weapons\Sabre\RustySabre.cs" />
+    <Compile Include="Weapons\Spear\Spear.cs" />
+    <Compile Include="Weapons\War Hammar\WarHammar.cs" />
+    <Compile Include="Weapons\WeaponBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Characters\Monsters\Beholder\" />
+    <Folder Include="Characters\Monsters\Chimera\" />
+    <Folder Include="Characters\Monsters\Imp\" />
+    <Folder Include="Characters\Monsters\Naga\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
